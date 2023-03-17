@@ -74,11 +74,11 @@ public class Chase_Hard : MonoBehaviour
         btnSprites_2.Remove(selected_alphabet);
         
         int ranom1 = Random.Range(0, btnSprites_2.Count);
-        btnSprites_2.Remove(btnSprites_2[ranom1]);
+        sprite1 = btnSprites_2[ranom1];
+        btnSprites_2.Remove(sprite1);
         
         int ranom2 = Random.Range(0, btnSprites_2.Count);
 
-        sprite1= btnSprites_2[ranom1];
         sprite2= btnSprites_2[ranom2];
 
         array = new Sprite[] {selected_alphabet,sprite1,selected_alphabet,sprite2,selected_alphabet};
