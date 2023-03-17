@@ -118,6 +118,10 @@ public class Chase_Hard : MonoBehaviour
             timer_obj += Time.deltaTime;
             setTimerObj2 = false;
         }
+        if (btns_2.Count == 0)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Chase_End_Screen");
+        }
     }
     public void spawning()
     {

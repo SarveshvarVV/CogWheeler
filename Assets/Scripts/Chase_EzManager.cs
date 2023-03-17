@@ -92,7 +92,10 @@ public class Chase_EzManager : MonoBehaviour
             timer_obj += Time.deltaTime;
             setTimerObj1 = false;
         }
-
+        if (btns_2.Count == 0)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Chase_End_Screen");
+        }
 
     }
 
