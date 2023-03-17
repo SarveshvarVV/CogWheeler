@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using System.Linq;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using System.ComponentModel;
 
 public class Chase_EzManager : MonoBehaviour
 {
@@ -17,19 +18,55 @@ public class Chase_EzManager : MonoBehaviour
     public static float elapsedTime;
     private float currentTimetoSpawn;
     public TextMeshProUGUI textMeshPro;
+    [SerializeField] private TextMeshProUGUI objectName;
     private int correctAns;
     public static bool setTimerObj1;
     public static float timer_obj = 0;
+
     // Start is called before the first frame update
     void Start()
     {
+        Color hehe = Color.white;
+        hehe.a = 0f;
         btns_2 = buttons.ToList();
         for (int i = 0; i < btns_2.Count; i++)
         {
             btns_2[i].interactable = false;
-            btns_2[i].gameObject.SetActive(false);
+            btns_2[i].image.color = hehe;
         }
         startTime = Time.time;
+        switch (selected_alphabet.name)
+        {
+            case "blu_botl":
+                objectName.text = "Selected: Blue Bottle";
+                break;
+            case "comb_box":
+                objectName.text = "Selected: Comb";
+                break;
+            case "keys_box":
+                objectName.text = "Selected: Keys";
+                break;
+            case "slippers":
+                objectName.text = "Selected: Slippers";
+                break;
+            case "phone":
+                objectName.text = "Selected: Phone";
+                break;
+            case "spectacles_box":
+                objectName.text = "Selected: Spectacles";
+                break;
+            case "spoon_png":
+                objectName.text = "Selected: Spoon";
+                break;
+            case "watch_box":
+                objectName.text = "Selected: Watch";
+                break;
+            default:
+                break;
+
+        }
+
+        
     }
 
     // Update is called once per frame
@@ -44,7 +81,7 @@ public class Chase_EzManager : MonoBehaviour
             spawning();
             currentTimetoSpawn = timetospawn;
         }
-        textMeshPro.text = correctAns.ToString();
+        textMeshPro.text = "Score: "+ correctAns.ToString();
         if (correctAns == 5)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Chase_End_Screen");
@@ -61,11 +98,14 @@ public class Chase_EzManager : MonoBehaviour
 
     public void spawning()
     {
-
+        Color hehe = Color.white;
+        hehe.a = 1f;
         int random1 = Random.Range(0, btns_2.Count);
+        btns_2[random1].image.color = hehe;
         btns_2[random1].interactable = true;
         btns_2[random1].image.sprite = selected_alphabet;
         btns_2[random1].gameObject.SetActive(true);
+        btns_2[random1].image.type = Image.Type.Sliced;
         btns_2.Remove(btns_2[random1]);
     }
     public void Check()

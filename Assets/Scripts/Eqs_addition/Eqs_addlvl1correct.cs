@@ -16,18 +16,19 @@ public class Eqs_addlvl1correct : MonoBehaviour
     public int privnum;
     public int scorenewval;
     //public int score=0;
-    public TextMeshProUGUI rightdis;
+    //public TextMeshProUGUI rightdis;
     public static int rightval;
     public static int scoreval;
     public static int failval;
     //public TextMeshProUGUI scoredis;
-    public TextMeshProUGUI faildis;
+    //public TextMeshProUGUI faildis;
 
-
+    private int levelCount;
 
     // Start is called before the first frame update
     void Start()
     {
+        levelCount = Eqs_addlvl1manager.levelCount;
         elapsedTime = Eqs_addlvl1manager.elapsedTime;
 
         minutes = Mathf.Floor(elapsedTime / 60).ToString("00");
@@ -46,10 +47,7 @@ public class Eqs_addlvl1correct : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rightval = Eqs_addlvl1manager.right;
-        rightdis.text ="Correct:"+ rightval.ToString();
-        failval = Eqs_addlvl1manager.fail;
-        faildis.text = "Wrong:" + failval.ToString();
+        
     }
 
     public void Clicked()

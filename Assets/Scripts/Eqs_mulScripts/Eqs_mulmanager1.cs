@@ -7,6 +7,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using System.Drawing;
+using UnityEditor;
 
 public class Eqs_mulmanager1 : MonoBehaviour
 {
@@ -28,36 +29,21 @@ public class Eqs_mulmanager1 : MonoBehaviour
     public static int fail = 0;
     public static int scoreval;
     public Text scoretext;
-    public static float time1;
-    public static float time2;
-    public static float time3;
-    public static float time4;
-    public static float time5;
-    public static float time6;
-    public static float time7;
-    public static float time8;
-    public static float time9;
-    public static float time10;
-    public static string result1;
-    public static string result2;
-    public static string result3;
-    public static string result4;
-    public static string result5;
-    public static string result6;
-    public static string result7;
-    public static string result8;
-    public static string result9;
-    public static string result10;
+
+    public static List<float> timeList = new List<float>();
+    public static List<string> resultList = new List<string>();
+
     public TextMeshProUGUI scoredis;
     public TextMeshProUGUI faildis;
-    public static float[] timearray1;
-    public static string[] resultarr1;
+
+    public static int levelCount = 0;
+
     private void Awake()
     {
+
         int random_1 = UnityEngine.Random.Range(0, notecoin.Length);
         note1.sprite = notecoin[random_1];
-        //int random_2 = UnityEngine.Random.Range(0, coinsList.Length);
-        //coin2.sprite = coinsList[random_2];
+        
         int note1_val = Convert.ToInt32(note1.sprite.name);
         if (note1_val == 1)
         {
@@ -77,12 +63,10 @@ public class Eqs_mulmanager1 : MonoBehaviour
             note1.rectTransform.localScale = new Vector3(2, 1, 1);
         }
        
-        //randomvar.text = UnityEngine.Random.Range(0, left).ToString();
+        
         privnum = UnityEngine.Random.Range(1,10);
         randomvar.text = privnum.ToString();
-        //GetComponent(TextMeshProUGUI).text = randomvar;
-        //int randomvar = Convert.ToInt32(note1.sprite.name);
-        //int coin2_val = Convert.ToInt32(coin2.sprite.name);
+        
         correct_ans = note1_val * privnum;
 
         int random_3 = UnityEngine.Random.Range(0, buttons.Length);
@@ -106,6 +90,7 @@ public class Eqs_mulmanager1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        levelCount++;
         startTime = Time.time;
     }
 
@@ -124,146 +109,18 @@ public class Eqs_mulmanager1 : MonoBehaviour
             SceneManager.LoadScene("Eqs_mulvictory1");
             elapsedTime = Time.time - startTime;
             Debug.Log(elapsedTime);
-            scoreval++;
-            right++;
-            //resultarr1[scoreval-1] = "r";
-            if (scoreval == 1)
-            {
-                result1 = "Right answer";
-            }
-            else if (scoreval == 2)
-            {
-                result2 = "Right answer";
-            }
-            else if (scoreval == 3)
-            {
-                result3 = "Right answer";
-            }
-            else if (scoreval == 4)
-            {
-                result4 = "Right answer";
-            }
-            else if (scoreval == 5)
-            {
-                result5 = "Right answer";
-            }
-            else if (scoreval == 6)
-            {
-                result6 = "Right answer";
-            }
-            else if (scoreval == 7)
-            {
-                result7 = "Right answer";
-            }
-            else if (scoreval == 8)
-            {
-                result8 = "Right answer";
-            }
-            else if (scoreval == 9)
-            {
-                result9 = "Right answer";
-            }
-            else if (scoreval == 10)
-            {
-                result10 = "Right answer";
-            }
+            timeList.Add(elapsedTime);
+            Debug.Log(timeList);
+            resultList.Add("Right");
 
         }
         else
         {
             SceneManager.LoadScene("Eqs_mulwrong1");
             elapsedTime = Time.time - startTime;
-            scoreval++;
-            fail++;
-            //resultarr1[scoreval-1] = "w";
-            if (scoreval == 1)
-            {
-                result1 = "Wrong answer";
-            }
-            else if (scoreval == 2)
-            {
-                result2 = "Wrong answer";
-            }
-            else if (scoreval == 3)
-            {
-                result3 = "Wrong answer";
-            }
-            else if (scoreval == 4)
-            {
-                result4 = "Wrong answer";
-            }
-            else if (scoreval == 5)
-            {
-                result5 = "Wrong answer";
-            }
-            else if (scoreval == 6)
-            {
-                result6 = "Wrong answer";
-            }
-            else if (scoreval == 7)
-            {
-                result7 = "Wrong answer";
-            }
-            else if (scoreval == 8)
-            {
-                result8 = "Wrong answer";
-            }
-            else if (scoreval == 9)
-            {
-                result9 = "Wrong answer";
-            }
-            else if (scoreval == 10)
-            {
-                result10 = "Wrong answer";
-            }
+            timeList.Add(elapsedTime);
+            resultList.Add("Wrong");
 
-        }
-        Debug.Log(scoreval);
-        //timearray1[scoreval - 1] = elapsedTime;
-        if (scoreval == 1)
-        {
-            time1 = elapsedTime;
-        }
-        else if (scoreval == 2)
-        {
-            time2 = elapsedTime;
-        }
-        else if (scoreval == 3)
-        {
-            time3 = elapsedTime;
-        }
-        else if (scoreval == 4)
-        {
-            time4 = elapsedTime;
-        }
-        else if (scoreval == 5)
-        {
-            time5 = elapsedTime;
-        }
-        else if (scoreval == 6)
-        {
-            time6 = elapsedTime;
-        }
-        else if (scoreval == 7)
-        {
-            time7 = elapsedTime;
-        }
-        else if (scoreval == 8)
-        {
-            time8 = elapsedTime;
-        }
-        else if (scoreval == 9)
-        {
-            time9 = elapsedTime;
-        }
-
-        else if (scoreval == 10)
-        {
-            time10 = elapsedTime;
-            SceneManager.LoadScene("Eqs_endscene");
-            Eqs_endscene.lvldecider = 1.1f;
-            //scorenewval = CorrectLevel_1.scoreval;
-            //scoredis.text = scorenewval.ToString();
         }
     }
 }

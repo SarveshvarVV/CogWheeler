@@ -18,20 +18,20 @@ public class Balloons_testDestroy : MonoBehaviour
         if (gameObject.CompareTag("Red_Ball"))
         {
             StartCoroutine(destroying());
-            count += 1;
-            Debug.Log(count);
+            count -= 1;
+            
         }
         else if (gameObject.CompareTag("Green_Ball"))
         {
             StartCoroutine(destroying());
-            count -= 1;
-            Debug.Log(count);
+            count += 1;
+            
         }
         else if (gameObject.CompareTag("Blue_Ball"))
         {
             StartCoroutine(destroying());
-            count -= 2;
-            Debug.Log(count);
+            count += 2;
+            
         }
 
     }

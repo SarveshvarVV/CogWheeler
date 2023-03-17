@@ -420,8 +420,8 @@ Canvas:
   m_GameObject: {fileID: 1060476198}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -576,6 +576,13 @@ MonoBehaviour:
   - {fileID: 8451635023567387542, guid: f6a6f290a1b54254cb45d1f8f77c4c30, type: 3}
   - {fileID: 3917077901046861628, guid: b16c5e1a6eab97a4f9cdb58a196d4b88, type: 3}
   - {fileID: 3917077901046861628, guid: b16c5e1a6eab97a4f9cdb58a196d4b88, type: 3}
+  - {fileID: 3917077901046861628, guid: b16c5e1a6eab97a4f9cdb58a196d4b88, type: 3}
+  - {fileID: 3917077901046861628, guid: b16c5e1a6eab97a4f9cdb58a196d4b88, type: 3}
+  - {fileID: 3917077901046861628, guid: b16c5e1a6eab97a4f9cdb58a196d4b88, type: 3}
+  - {fileID: 3917077901046861628, guid: b16c5e1a6eab97a4f9cdb58a196d4b88, type: 3}
+  - {fileID: 3917077901046861628, guid: b16c5e1a6eab97a4f9cdb58a196d4b88, type: 3}
+  - {fileID: 8770931896239683214, guid: 8086f8592bfcffe4fa7d5f597e733a1e, type: 3}
+  - {fileID: 8770931896239683214, guid: 8086f8592bfcffe4fa7d5f597e733a1e, type: 3}
   - {fileID: 8770931896239683214, guid: 8086f8592bfcffe4fa7d5f597e733a1e, type: 3}
   score: {fileID: 1635817189}
   tim: {fileID: 1143782778}

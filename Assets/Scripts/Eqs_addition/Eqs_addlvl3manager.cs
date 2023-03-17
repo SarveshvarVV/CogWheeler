@@ -23,30 +23,15 @@ public class Eqs_addlvl3manager : MonoBehaviour
     public int scorenewval;
     //public int score=0;
     public static int fail = 0;
-    public static float time1;
-    public static float time2;
-    public static float time3;
-    public static float time4;
-    public static float time5;
-    public static float time6;
-    public static float time7;
-    public static float time8;
-    public static float time9;
-    public static float time10;
-    public static string result1;
-    public static string result2;
-    public static string result3;
-    public static string result4;
-    public static string result5;
-    public static string result6;
-    public static string result7;
-    public static string result8;
-    public static string result9;
-    public static string result10;
+    public static List<float> timeList = new List<float>();
+    public static List<string> resultList = new List<string>();
     public static int scoreval;
     public Text scoretext;
     public TextMeshProUGUI scoredis;
     public TextMeshProUGUI faildis;
+
+    public static int levelCount;
+    
     private void Awake()
     {
         int random_1 = UnityEngine.Random.Range(0, lvl3.Length);
@@ -84,7 +69,7 @@ public class Eqs_addlvl3manager : MonoBehaviour
         {
             if (i != random_3)
             {
-                buttons[i].text = (correct_ans * UnityEngine.Random.Range(0, 5) + (i * 2 + 1)).ToString();
+                buttons[i].text = (correct_ans + ((i + 1) * 2)).ToString();
             }
         }
         string current_scene = SceneManager.GetActiveScene().name;
@@ -96,6 +81,7 @@ public class Eqs_addlvl3manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        levelCount++;
         startTime = Time.time;
     }
 
@@ -114,148 +100,18 @@ public class Eqs_addlvl3manager : MonoBehaviour
             SceneManager.LoadScene("Eqs_addvictory3");
             elapsedTime = Time.time - startTime;
             Debug.Log(elapsedTime);
-            scoreval++;
-            right++;
-            if (scoreval == 1)
-            {
-                result1 = "Right answer";
-            }
-            else if (scoreval == 2)
-            {
-                result2 = "Right answer";
-            }
-            else if (scoreval == 3)
-            {
-                result3 = "Right answer";
-            }
-            else if (scoreval == 4)
-            {
-                result4 = "Right answer";
-            }
-            else if (scoreval == 5)
-            {
-                result5 = "Right answer";
-            }
-            else if (scoreval == 6)
-            {
-                result6 = "Right answer";
-            }
-            else if (scoreval == 7)
-            {
-                result7 = "Right answer";
-            }
-            else if (scoreval == 8)
-            {
-                result8 = "Right answer";
-            }
-            else if (scoreval == 9)
-            {
-                result9 = "Right answer";
-            }
-            else if (scoreval == 10)
-            {
-                result10 = "Right answer";
-            }
+            timeList.Add(elapsedTime);
+            Debug.Log(timeList);
+            resultList.Add("Right");
 
-
-
-            //scoretext.text = scoreval.ToString();
-            //scoredis.SetText("scoretext");
         }
         else
         {
-            elapsedTime = Time.time - startTime;
-            Debug.Log(elapsedTime);
             SceneManager.LoadScene("Eqs_addwrong3");
-            scoreval++;
-            fail++;
-            if (scoreval == 1)
-            {
-                result1 = "Wrong answer";
-            }
-            else if (scoreval == 2)
-            {
-                result2 = "Wrong answer";
-            }
-            else if (scoreval == 3)
-            {
-                result3 = "Wrong answer";
-            }
-            else if (scoreval == 4)
-            {
-                result4 = "Wrong answer";
-            }
-            else if (scoreval == 5)
-            {
-                result5 = "Wrong answer";
-            }
-            else if (scoreval == 6)
-            {
-                result6 = "Wrong answer";
-            }
-            else if (scoreval == 7)
-            {
-                result7 = "Wrong answer";
-            }
-            else if (scoreval == 8)
-            {
-                result8 = "Wrong answer";
-            }
-            else if (scoreval == 9)
-            {
-                result9 = "Wrong answer";
-            }
-            else if (scoreval == 10)
-            {
-                result10 = "Wrong answer";
-            }
-        }
-        Debug.Log(scoreval);
-        //timearray1[scoreval - 1] = elapsedTime;
-        if (scoreval == 1)
-        {
-            time1 = elapsedTime;
-        }
-        else if (scoreval == 2)
-        {
-            time2 = elapsedTime;
-        }
-        else if (scoreval == 3)
-        {
-            time3 = elapsedTime;
-        }
-        else if (scoreval == 4)
-        {
-            time4 = elapsedTime;
-        }
-        else if (scoreval == 5)
-        {
-            time5 = elapsedTime;
-        }
-        else if (scoreval == 6)
-        {
-            time6 = elapsedTime;
-        }
-        else if (scoreval == 7)
-        {
-            time7 = elapsedTime;
-        }
-        else if (scoreval == 8)
-        {
-            time8 = elapsedTime;
-        }
-        else if (scoreval == 9)
-        {
-            time9 = elapsedTime;
-        }
+            elapsedTime = Time.time - startTime;
+            timeList.Add(elapsedTime);
+            resultList.Add("Wrong");
 
-        else if (scoreval == 10)
-        {
-            time10 = elapsedTime;
-            SceneManager.LoadScene("Eqs_addsub_endscene");
-            Eqs_addsub_endscene.lvldecider = 1.3f;
-            //scorenewval = CorrectLevel_1.scoreval;
-            //scoredis.text = scorenewval.ToString();
         }
     }
 }

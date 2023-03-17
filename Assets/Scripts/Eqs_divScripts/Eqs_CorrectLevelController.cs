@@ -18,33 +18,34 @@ public class Eqs_CorrectLevelController : MonoBehaviour
     public static int right;
     //public int score=0;
     public static int fail = 0;
-    public TextMeshProUGUI rightdis;
+    //public TextMeshProUGUI rightdis;
     public static int rightval;
     public static int scoreval;
     public static int failval;
     //public int scorenewval;
     public Text scoretext;
-    public TextMeshProUGUI scoredis;
-    public TextMeshProUGUI faildis;
+    //public TextMeshProUGUI scoredis;
+    //public TextMeshProUGUI faildis;
 
-
+    private int levelCount;
 
 
     // Start is called before the first frame update
     void Start()
     {
-          elapsedTime = Eqs_lvl2_GameManager.elapsedTime;
+        levelCount = Eqs_lvl2_GameManager.levelCount;
+        elapsedTime = Eqs_lvl2_GameManager.elapsedTime;
 
-           minutes = Mathf.Floor(elapsedTime / 60).ToString("00");
-           seconds = Mathf.Floor(elapsedTime % 60).ToString("00");
-           milliseconds = Mathf.Floor(elapsedTime * 1000).ToString("00");
+        minutes = Mathf.Floor(elapsedTime / 60).ToString("00");
+        seconds = Mathf.Floor(elapsedTime % 60).ToString("00");
+        milliseconds = Mathf.Floor(elapsedTime * 1000).ToString("00");
 
-           timeTaken.SetText("Time Taken: " + minutes + ":" + seconds + ":" + milliseconds);
+        timeTaken.SetText("Time Taken: " + minutes + ":" + seconds + ":" + milliseconds);
 
-          previousLevel = PlayerPrefs.GetString(last_scene);
-          //scorenewval = Eqs_lvl2_GameManager.scoreval;
-          // scoredis.text = scorenewval.ToString();
-        //scoredis.SetText("scoretext");
+        previousLevel = PlayerPrefs.GetString(last_scene);
+        //scorenewval = Eqs_lvl2_GameManager.scoreval;
+        // scoredis.text = scorenewval.ToString();
+    //scoredis.SetText("scoretext");
 
 
     }
@@ -52,16 +53,23 @@ public class Eqs_CorrectLevelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rightval = Eqs_lvl2_GameManager.right;
-        rightdis.text = rightval.ToString();
-        failval = Eqs_lvl2_GameManager.fail;
-        faildis.text = failval.ToString();
+        //rightval = Eqs_lvl2_GameManager.right;
+        //rightdis.text = rightval.ToString();
+        //failval = Eqs_lvl2_GameManager.fail;
+        //faildis.text = failval.ToString();
     
     }
 
     public void Clicked()
     {
-        SceneManager.LoadScene(previousLevel);
+        if (levelCount == 10)
+        {
+            SceneManager.LoadScene("Eqs_endscene");
+        }
+        else
+        {
+            SceneManager.LoadScene(previousLevel);
+        }
     }
     //public void rightcount()
     //{

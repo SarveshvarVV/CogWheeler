@@ -19,12 +19,14 @@ public class Balloons_Med_GameManager : MonoBehaviour
     public TMP_Text tim;
     public static bool setTimer2;
     private float currentTimetoSpawn;
-    private float timetospawn = 5f;
+    private float timetospawn = 3f;
     float currentTime;
     public float startingTime = 30f;
+    private GameObject c;
     void Start()
     {
         spawning();
+        destroying();
         currentTime = startingTime;
     }
 
@@ -38,6 +40,7 @@ public class Balloons_Med_GameManager : MonoBehaviour
         else
         {
             spawning();
+            destroying();
             currentTimetoSpawn = timetospawn;
         }
         
@@ -54,7 +57,7 @@ public class Balloons_Med_GameManager : MonoBehaviour
         maxy = Random.Range(-4,4);
         random1 = Random.Range(0, circle.Length);
 
-        Instantiate(circle[random1],new Vector3(maxx, maxy, 0),Quaternion.identity);
+        c = Instantiate(circle[random1],new Vector3(maxx, maxy, 0),Quaternion.identity);
 
     }
     
@@ -73,4 +76,10 @@ public class Balloons_Med_GameManager : MonoBehaviour
             setTimer2 = false;
         }
     }
+
+    public void destroying()
+    {
+        Destroy(c, 5f);
+    }
+
 }

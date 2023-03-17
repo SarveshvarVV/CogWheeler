@@ -129,6 +129,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Balloon/Balloons_Ez.unity
     guid: 8a5d6b9121ebcba4480f2f078aeef9f0
   - enabled: 1
+    path: Assets/Scenes/Balloon/Balloons_Med.unity
+    guid: 1cf80b0cf2f9c1c48829122c750e1fd3
+  - enabled: 1
     path: Assets/Scenes/Balloon/Balloons_Hard.unity
     guid: a080298e52d4e7f4eb9caa16cf0b4d65
   - enabled: 1
@@ -162,7 +165,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Eq/Add_Sub/Eqs_addwrong3.unity
     guid: e8fe15dc7d081d84db2005f0e3633604
   - enabled: 1
-    path: Assets/Scenes/Eq/Add_Sub/Eqs_endscene.unity
+    path: Assets/Scenes/Eq/Add_Sub/Eqs_endscene_add_sub.unity
     guid: c1086845446e0f146a8fdfe5a8082899
   - enabled: 1
     path: Assets/Scenes/Eq/Eqs_Menu.unity
@@ -194,9 +197,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Eq/Add_Sub/Eqs_subwrong3.unity
     guid: ff2a19cee74f0e44bb928a9ec507ff30
-  - enabled: 1
-    path: Assets/Scenes/Eq/Mul_Div/Eqs_Chase_Menu.unity
-    guid: 890e440655928dd49a00a7ccb7e281c3
   - enabled: 1
     path: Assets/Scenes/Eq/Mul_Div/Eqs_div1.unity
     guid: b93cb063b156c73429f772be17cbb458

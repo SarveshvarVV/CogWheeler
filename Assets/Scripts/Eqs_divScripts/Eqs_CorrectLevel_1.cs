@@ -16,18 +16,19 @@ public class Eqs_CorrectLevel_1 : MonoBehaviour
     public int privnum;
     public int scorenewval;
     //public int score=0;
-    public TextMeshProUGUI rightdis;
+    //public TextMeshProUGUI rightdis;
     public static int rightval;
     //public static int scoreval;
     public static int failval;
-    public TextMeshProUGUI scoredis;
-    public TextMeshProUGUI faildis;
+    //public TextMeshProUGUI scoredis;
+    //ublic TextMeshProUGUI faildis;
 
-
+    private int levelCount;
 
     // Start is called before the first frame update
     void Start()
     {
+        levelCount = Eqs_lvl1_GameManager.levelCount;
         elapsedTime = Eqs_lvl1_GameManager.elapsedTime;
 
         minutes = Mathf.Floor(elapsedTime / 60).ToString("00");
@@ -46,15 +47,22 @@ public class Eqs_CorrectLevel_1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rightval = Eqs_lvl1_GameManager.right;
-        rightdis.text = rightval.ToString();
-        failval = Eqs_lvl1_GameManager.fail;
-        faildis.text = failval.ToString();
+        //rightval = Eqs_lvl1_GameManager.right;
+        //rightdis.text = rightval.ToString();
+        //failval = Eqs_lvl1_GameManager.fail;
+        //faildis.text = failval.ToString();
     }
 
     public void Clicked()
     {
-        SceneManager.LoadScene(previousLevel);
+        if (levelCount == 10)
+        {
+            SceneManager.LoadScene("Eqs_endscene");
+        }
+        else
+        {
+            SceneManager.LoadScene(previousLevel);
+        }
     }
     public void menu_clicked()
     {

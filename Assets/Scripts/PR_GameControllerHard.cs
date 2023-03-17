@@ -186,7 +186,7 @@ public class PR_GameControllerHard : MonoBehaviour
         {
             Panel.SetActive(true); //end game panel is set active
             Back.SetActive(false);
-            timer1 = timer_ez;
+            timer1 = timer_ez - 5f;
             timeText.text = "Time: " + timer1;  //timmer value is set to the text
             timer_ez = 0; //timer reset
             score = 0; //score is reset
@@ -195,7 +195,7 @@ public class PR_GameControllerHard : MonoBehaviour
         }
         else
         {
-            timer_ez += Time.deltaTime; //timer value is increased
+            timer_ez += (1f * Time.deltaTime); //timer value is increased
 
 
         }

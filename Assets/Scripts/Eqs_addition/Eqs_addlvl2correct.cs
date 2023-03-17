@@ -16,18 +16,19 @@ public class Eqs_addlvl2correct : MonoBehaviour
     public int privnum;
     public int scorenewval;
     //public int score=0;
-    public TextMeshProUGUI rightdis;
+    //public TextMeshProUGUI rightdis;
     public static int rightval;
     public static int scoreval;
     public static int failval;
     //public TextMeshProUGUI scoredis;
-    public TextMeshProUGUI faildis;
+    //public TextMeshProUGUI faildis;
 
-
+    public int levelCount;
 
     // Start is called before the first frame update
     void Start()
     {
+        levelCount = Eqs_addlvl2manager.levelCount;
         elapsedTime = Eqs_addlvl2manager.elapsedTime;
 
         minutes = Mathf.Floor(elapsedTime / 60).ToString("00");
@@ -46,15 +47,22 @@ public class Eqs_addlvl2correct : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rightval = Eqs_addlvl2manager.right;
-        rightdis.text = "Correct:" + rightval.ToString();
-        failval = Eqs_addlvl2manager.fail;
-        faildis.text = "Wrong:" + failval.ToString();
+        //rightval = Eqs_addlvl2manager.right;
+        //rightdis.text = "Correct:" + rightval.ToString();
+        //failval = Eqs_addlvl2manager.fail;
+        //faildis.text = "Wrong:" + failval.ToString();
     }
 
     public void Clicked()
     {
-        SceneManager.LoadScene(previousLevel);
+        if (levelCount == 10)
+        {
+            SceneManager.LoadScene("Eqs_endscene_add_sub");
+        }
+        else
+        {
+            SceneManager.LoadScene(previousLevel);
+        }
     }
     public void menu_clicked()
     {

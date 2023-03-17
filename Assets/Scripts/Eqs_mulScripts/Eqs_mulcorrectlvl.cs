@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System;
-
+using UnityEngine.UI;
 
 public class Eqs_mulcorrectlvl : MonoBehaviour
 {
@@ -16,18 +16,20 @@ public class Eqs_mulcorrectlvl : MonoBehaviour
     public int privnum;
     //public int scorenewval;
     //public int score=0;
-    public TextMeshProUGUI rightdis;
+    //public TextMeshProUGUI rightdis;
     public static int rightval;
     public static int scoreval;
     public static int failval;
-    public TextMeshProUGUI scoredis;
-    public TextMeshProUGUI faildis;
+    //public TextMeshProUGUI scoredis;
+    //public TextMeshProUGUI faildis;
 
+    public int levelCount;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        levelCount = Eqs_mulmanager1.levelCount;
         elapsedTime = Eqs_mulmanager1.elapsedTime;
 
         minutes = Mathf.Floor(elapsedTime / 60).ToString("00");
@@ -46,15 +48,24 @@ public class Eqs_mulcorrectlvl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rightval = Eqs_mulmanager1.right;
-        rightdis.text = rightval.ToString();
-        failval = Eqs_mulmanager1.fail;
-        faildis.text = failval.ToString();
+        //rightval = Eqs_mulmanager1.right;
+        //rightdis.text = rightval.ToString();
+        //failval = Eqs_mulmanager1.fail;
+        //faildis.text = failval.ToString();
     }
 
     public void Clicked()
     {
-        SceneManager.LoadScene(previousLevel);
+        if (levelCount == 10)
+        {
+            SceneManager.LoadScene("Eqs_endscene");
+        }
+        else
+        {
+            SceneManager.LoadScene(previousLevel);
+        }
+
+
     }
     public void menu_clicked()
     {
