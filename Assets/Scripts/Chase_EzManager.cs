@@ -110,7 +110,7 @@ public class Chase_EzManager : MonoBehaviour
         btns_2[random1].image.color = hehe;
         btns_2[random1].interactable = true;
         btns_2[random1].image.sprite = selected_alphabet;
-        btns_2[random1].gameObject.SetActive(true);
+       // btns_2[random1].gameObject.SetActive(true);
         btns_2[random1].image.type = Image.Type.Sliced;
         btns_2.Remove(btns_2[random1]);
     }

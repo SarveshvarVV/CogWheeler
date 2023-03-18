@@ -28,9 +28,12 @@ public class Chase_Hard : MonoBehaviour
     [SerializeField] private TextMeshProUGUI objectName;
     private Sprite sprite1,sprite2;
     private int counting;
+    public Color alpha0;
     // Start is called before the first frame update
     void Start()
     {
+        alpha0 = Color.white;
+        alpha0.a = 0f;
         Color hehe = Color.white;
         hehe.a = 0f;
         btnSprites_2 = buttonSprites.ToList();
@@ -133,7 +136,7 @@ public class Chase_Hard : MonoBehaviour
         btns_2[random1].interactable = true;
         btns_2[random1].image.type = Image.Type.Sliced;
         btns_2[random1].image.sprite = listofsprites[random2];
-        btns_2[random1].gameObject.SetActive(true);
+        //btns_2[random1].gameObject.SetActive(true);
         btns_2.Remove(btns_2[random1]);
         counting--;
     }
@@ -145,14 +148,16 @@ public class Chase_Hard : MonoBehaviour
         {
             correctAns++;
             selectedBtn.gameObject.GetComponentInParent<Button>().interactable = false;
-            selectedBtn.gameObject.GetComponentInParent<Button>().gameObject.SetActive(false);
+            selectedBtn.gameObject.GetComponentInParent<Button>().image.color = alpha0;
+            // selectedBtn.gameObject.GetComponentInParent<Button>().gameObject.SetActive(false);
             btns_2.Add(selected);
         }
         else
         {
             correctAns--;
             selectedBtn.gameObject.GetComponentInParent<Button>().interactable = false;
-            selectedBtn.gameObject.GetComponentInParent<Button>().gameObject.SetActive(false);
+            selectedBtn.gameObject.GetComponentInParent<Button>().image.color = alpha0;
+            // selectedBtn.gameObject.GetComponentInParent<Button>().gameObject.SetActive(false);
             btns_2.Add(selected);
             //SceneManager.LoadScene("WrongLevel");
         }
