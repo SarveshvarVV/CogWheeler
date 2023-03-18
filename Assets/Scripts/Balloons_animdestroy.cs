@@ -6,6 +6,6 @@ public class Balloons_animdestroy : MonoBehaviour
 {
     private void Start()
     {
-        Destroy(this.gameObject, 1.4f);
+        Destroy(this.gameObject,0.5f);
     }
 }

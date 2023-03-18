@@ -6,6 +6,36 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
+<<<<<<< HEAD
+      value: 0552020701505f595f5b0e2648730f441015197e297c23607f2a4e36b5b56568
+      flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 570256565253510d5b5a557245770a441415197c7b7c20637a7c1831b3b9366f
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 0506035407015a5e5e0a557113700944104f1d7b787e716678284831b6b9326d
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 5453555e04035e585c585f7312730d4417151d79787b7069742b1931bae1633d
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 5655515106510a020c5d5b7646760a4413164c727e7924607e711b6ab4e36d68
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 5700010353560f580f5e5c7b48715b44104f4b297f2a77667c2a186abbb03760
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 025401525303590c550c087315740e44104e1d7f7c79726628704532e1b56d61
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 510701545d0251590c5c5e7745710944474f4e727c7d25657c7b1863e7b0373e
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 0706060352075f085a56582112700c44124f1d72282e25312f704e37b3b76639
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 5552560250065a03085d5a7044740e44434f1e2f797c7762797f4532b2e26060
+=======
       value: 0707045157575d5e085d597442710b44424f4e2b2d7977687c284535b7e1666c
       flags: 0
     RecentlyUsedSceneGuid-1:
@@ -28,6 +58,13 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-7:
       value: 56555555520c5d0d5b0a0a7213715d4440161d297b7b206179781931b3b1306f
+>>>>>>> ce0b8155748a52ffcc930bf6534437083cff648d
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 0704515700545e580e0b082740225d444215417c2d2e7035782f1e62b5b4366f
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 5304005e50500b0c550b5a7546745a44404e492c757d72342e7d1b6ae1b73660
       flags: 0
     RecentlyUsedSceneGuid-8:
       value: 0704515700545e580e0b082740225d444215417c2d2e7035782f1e62b5b4366f

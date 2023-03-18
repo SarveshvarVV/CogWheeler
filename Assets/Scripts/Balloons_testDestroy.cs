@@ -40,7 +40,7 @@ public class Balloons_testDestroy : MonoBehaviour
         Destroy(this.GetComponent<BoxCollider2D>());
         Instantiate(animator,transform.position,Quaternion.identity);
         Destroy(this.gameObject);
-        yield return new WaitForSeconds(1.4f);
+        yield return new WaitForSeconds(1f);
         Destroy(animator);
     }
     
