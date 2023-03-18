@@ -22,10 +22,13 @@ public class Chase_EzManager : MonoBehaviour
     private int correctAns;
     public static bool setTimerObj1;
     public static float timer_obj = 0;
+    public Color alpha0;
 
     // Start is called before the first frame update
     void Start()
     {
+        alpha0 = Color.white;
+        alpha0.a = 0f;
         Color hehe = Color.white;
         hehe.a = 0f;
         btns_2 = buttons.ToList();
@@ -119,14 +122,16 @@ public class Chase_EzManager : MonoBehaviour
         {
             correctAns++;
             selectedBtn.gameObject.GetComponentInParent<Button>().interactable = false;
-            selectedBtn.gameObject.GetComponentInParent<Button>().gameObject.SetActive(false);
+            selectedBtn.gameObject.GetComponentInParent<Button>().image.color = alpha0;
+            //selectedBtn.gameObject.GetComponentInParent<Button>().gameObject.SetActive(false);
             btns_2.Add(selected);
         }
         else
         {
             correctAns--;
             selectedBtn.gameObject.GetComponentInParent<Button>().interactable = false;
-            selectedBtn.gameObject.GetComponentInParent<Button>().gameObject.SetActive(false);
+            selectedBtn.gameObject.GetComponentInParent<Button>().image.color = alpha0;
+            //selectedBtn.gameObject.GetComponentInParent<Button>().gameObject.SetActive(false);
             btns_2.Add(selected);
             //SceneManager.LoadScene("WrongLevel");
         }
