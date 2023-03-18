@@ -45,7 +45,7 @@ public class Balloons_Hard_GameManager : MonoBehaviour
         }
 
         timing();
-        score.text = "Your Score: " + Balloons_testDestroy.count;                // display the current score
+        score.text = "Score: " + Balloons_testDestroy.count;                // display the current score
         tim.text = "Time Remaining: " + Mathf.RoundToInt(currentTime);  // instead of score, display the timer in reverse order
     }
 

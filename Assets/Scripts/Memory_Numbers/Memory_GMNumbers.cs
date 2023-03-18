@@ -13,6 +13,7 @@ public class Memory_GMNumbers : MonoBehaviour
 
     public GameObject gStart;
     public GameObject Panel;
+    public GameObject Numbers;
 
 
     private float waitBetweenCounter;
@@ -37,7 +38,7 @@ public class Memory_GMNumbers : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Numbers.SetActive(true);
     }
 
     // Update is called once per frame
@@ -121,6 +122,7 @@ public class Memory_GMNumbers : MonoBehaviour
                 timeText.text = "Response Time: " + elapsedTime;
                 gameActive = false;
                 Panel.SetActive(true);
+                Numbers.SetActive(false);
             }
         }
     }
@@ -143,6 +145,8 @@ public class Memory_GMNumbers : MonoBehaviour
             //Debug.Log("Game limit");
             gameActive = false;
             Panel.SetActive(true);
+            Numbers.SetActive(false);
+
         }
         else
         {
