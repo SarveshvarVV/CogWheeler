@@ -52,7 +52,14 @@ public class Eqs_addlvl1correct : MonoBehaviour
 
     public void Clicked()
     {
-        SceneManager.LoadScene(previousLevel);
+        if (levelCount == 10)
+        {
+            SceneManager.LoadScene("Eqs_endscene_add_sub");
+        }
+        else
+        {
+            SceneManager.LoadScene(previousLevel);
+        }
     }
     public void menu_clicked()
     {
