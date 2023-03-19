@@ -261,8 +261,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 120
     m_Right: 120
-    m_Top: 20
-    m_Bottom: 20
+    m_Top: 10
+    m_Bottom: 10
   m_ChildAlignment: 0
   m_Spacing: 15
   m_ChildForceExpandWidth: 1
@@ -2281,8 +2281,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 120
     m_Right: 120
-    m_Top: 20
-    m_Bottom: 20
+    m_Top: 10
+    m_Bottom: 10
   m_ChildAlignment: 0
   m_Spacing: 15
   m_ChildForceExpandWidth: 1
@@ -2414,7 +2414,7 @@ MonoBehaviour:
     m_Left: 120
     m_Right: 120
     m_Top: 20
-    m_Bottom: 20
+    m_Bottom: 10
   m_ChildAlignment: 0
   m_Spacing: 15
   m_ChildForceExpandWidth: 1
@@ -3544,7 +3544,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 120
     m_Right: 120
-    m_Top: 20
+    m_Top: 10
     m_Bottom: 20
   m_ChildAlignment: 0
   m_Spacing: 15
