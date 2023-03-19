@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Red_Ball
+  - Green_Ball
+  - Blue_Ball
+  - PopAudio
   layers:
   - Default
   - TransparentFX

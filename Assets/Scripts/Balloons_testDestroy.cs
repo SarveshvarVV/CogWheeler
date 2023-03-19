@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Balloons_testDestroy : MonoBehaviour
 {
    // public GameObject videoPrefab;
     public static int count = 0;
     [SerializeField] GameObject animator;
+
     // Start is called before the first frame update
     //private void Start()
     //{
@@ -14,7 +16,9 @@ public class Balloons_testDestroy : MonoBehaviour
     //}
     private void OnMouseDown()
     {
-
+        GameObject popGameObj = GameObject.FindWithTag("PopAudio");
+        AudioSource PopAudio = popGameObj.GetComponent<AudioSource>();
+        PopAudio.Play();
         if (gameObject.CompareTag("Red_Ball"))
         {
             StartCoroutine(destroying());

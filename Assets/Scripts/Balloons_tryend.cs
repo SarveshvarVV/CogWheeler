@@ -7,10 +7,12 @@ public class Balloons_tryend : MonoBehaviour
 {
 
     public TMP_Text score;
+    private GameObject mainScreenAudioSource;
     //public TMP_Text count;
     private void Start()
     {
-        
+        mainScreenAudioSource = Balloons_Menu_Script.Ballons_game_audio;
+        Destroy(mainScreenAudioSource);
     }
     void Update()
     {
