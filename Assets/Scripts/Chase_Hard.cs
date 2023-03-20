@@ -29,9 +29,20 @@ public class Chase_Hard : MonoBehaviour
     private Sprite sprite1,sprite2;
     private int counting;
     public Color alpha0;
+    public GameObject ChaseGameAudio;
+    public AudioSource BtnClickAudio;
+
+    private void Awake()
+    {
+        ChaseGameAudio = Chase_Menu_Script.Chase_game_audio;
+
+    }
+
     // Start is called before the first frame update
     public void chasemenu()
     {
+        DontDestroyOnLoad(BtnClickAudio.gameObject);
+        Destroy(ChaseGameAudio);
         UnityEngine.SceneManagement.SceneManager.LoadScene("Chase_Menu");
     }
     void Start()

@@ -5,13 +5,18 @@ using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class Chase_Obj_Menu : MonoBehaviour
 {
     public static Sprite SelectedSprite;
+    public AudioSource BtnClick;
 
     public void Nexttouch()
     {
+        
+        DontDestroyOnLoad(BtnClick.gameObject);
+        BtnClick.Play();
         Button selected_btn = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();  //getting the input as to which button is selected
 
         Image img = selected_btn.GetComponent<Image>();  //the selected button's image is read

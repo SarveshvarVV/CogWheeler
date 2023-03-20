@@ -23,6 +23,13 @@ public class Chase_EzManager : MonoBehaviour
     public static bool setTimerObj1;
     public static float timer_obj = 0;
     public Color alpha0;
+    public GameObject ChaseGameAudio;
+    public AudioSource BtnClickAudio;
+
+    private void Awake()
+    {
+        ChaseGameAudio = Chase_Menu_Script.Chase_game_audio;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -139,6 +146,8 @@ public class Chase_EzManager : MonoBehaviour
     }
     public void chasemenu()
     {
+        DontDestroyOnLoad(BtnClickAudio.gameObject);
+        Destroy(ChaseGameAudio);
         UnityEngine.SceneManagement.SceneManager.LoadScene("Chase_Menu");
     }
 }
