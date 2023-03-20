@@ -82,7 +82,7 @@ public class Eqs_addlvl3manager : MonoBehaviour
     void Start()
     {
         levelCount++;
-        startTime = Time.time;
+        startTime = 1*Time.time;
     }
 
     // Update is called once per frame
@@ -98,7 +98,7 @@ public class Eqs_addlvl3manager : MonoBehaviour
         if (selected_btn == correct_btn)
         {
             SceneManager.LoadScene("Eqs_addvictory3");
-            elapsedTime = Time.time - startTime;
+            elapsedTime = (1 * Time.time) - startTime;
             Debug.Log(elapsedTime);
             timeList.Add(elapsedTime);
             Debug.Log(timeList);
@@ -108,7 +108,7 @@ public class Eqs_addlvl3manager : MonoBehaviour
         else
         {
             SceneManager.LoadScene("Eqs_addwrong3");
-            elapsedTime = Time.time - startTime;
+            elapsedTime = (1 * Time.time) - startTime;
             timeList.Add(elapsedTime);
             resultList.Add("Wrong");
 

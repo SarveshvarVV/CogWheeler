@@ -746,8 +746,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1070372814}
-        m_TargetAssemblyTypeName: MenuGo, Assembly-CSharp
-        m_MethodName: Goto
+        m_TargetAssemblyTypeName: PR_MenuGo, Assembly-CSharp
+        m_MethodName: GS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

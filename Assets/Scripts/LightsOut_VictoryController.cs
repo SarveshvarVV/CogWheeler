@@ -11,7 +11,10 @@ public class LightsOut_VictoryController : MonoBehaviour
     private string minutes, seconds, milliseconds;
     public TextMeshProUGUI timeTaken;
     public int score;
-
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
     private void Awake()
     {
         elapsedTime = LightsOut_GameManager.elapsedtime;

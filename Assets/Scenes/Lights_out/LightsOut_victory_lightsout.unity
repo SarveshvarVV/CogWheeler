@@ -277,7 +277,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1189228302}
         m_TargetAssemblyTypeName: LightsOut_VictoryController, Assembly-CSharp
-        m_MethodName: backtoMenu
+        m_MethodName: GS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

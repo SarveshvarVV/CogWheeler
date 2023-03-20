@@ -54,5 +54,9 @@ public class PR_ChangeScene : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("PR_SymbolsHard");
     }
-    
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
+
 }

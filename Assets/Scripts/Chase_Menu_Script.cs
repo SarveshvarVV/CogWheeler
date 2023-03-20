@@ -22,5 +22,9 @@ public class Chase_Menu_Script : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("Chase_Objects_Menu");
         objlvl = 2;
     }
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
 
 }

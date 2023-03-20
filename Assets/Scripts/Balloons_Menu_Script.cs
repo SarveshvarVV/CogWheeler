@@ -34,5 +34,8 @@ public class Balloons_Menu_Script : MonoBehaviour
     {
         btnSound.Play();
     }
-
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
 }

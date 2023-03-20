@@ -9,4 +9,8 @@ public class Memory_MenuGo : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Memory_Menu");
     }
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
 }

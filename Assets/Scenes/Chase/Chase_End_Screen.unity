@@ -437,8 +437,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1628416041}
-        m_TargetAssemblyTypeName: endscr, Assembly-CSharp
-        m_MethodName: back
+        m_TargetAssemblyTypeName: Chase_endscr, Assembly-CSharp
+        m_MethodName: GS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

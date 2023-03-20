@@ -15,6 +15,10 @@ public class Eqs_addsub_scenemanager : MonoBehaviour
     {
 
     }
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
     public void add1()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Eqs_addlvl1");

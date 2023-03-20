@@ -7,6 +7,10 @@ public class Track_Menucontrols : MonoBehaviour
 {
     public static bool ez;
     // Start is called before the first frame update
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
     public void GotoEz()
     {
         ez = true;

@@ -17,7 +17,10 @@ public class Eqs_endscene : MonoBehaviour
 
     private float avgTime;
 
-    
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
     void Start()
     {
         last_scene = PlayerPrefs.GetString("last_scene");

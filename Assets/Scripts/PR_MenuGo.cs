@@ -10,5 +10,9 @@ public class PR_MenuGo : MonoBehaviour
         
         UnityEngine.SceneManagement.SceneManager.LoadScene("PR_Menu"); //menu screen is loaded
     }
-    
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
+
 }

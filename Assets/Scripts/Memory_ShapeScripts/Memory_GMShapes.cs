@@ -40,7 +40,7 @@ public class Memory_GMShapes : MonoBehaviour
 
         if (shouldBeLit)
         {
-            stayLitCounter -= Time.deltaTime;
+            stayLitCounter -= 1*Time.deltaTime;
 
             if (stayLitCounter < 0)
             {
@@ -54,7 +54,7 @@ public class Memory_GMShapes : MonoBehaviour
         }
         if (shouldBeDark)
         {
-            waitBetweenCounter -= Time.deltaTime;
+            waitBetweenCounter -= 1 * Time.deltaTime;
             if (positionInSequence >= activeSequence.Count)
             {
                 shouldBeDark = false;
@@ -75,7 +75,7 @@ public class Memory_GMShapes : MonoBehaviour
 
     public void StartGame()
     {
-        startTime = Time.time;
+        startTime = 1 * Time.time;
         activeSequence.Clear();
         positionInSequence = 0;
         inputInSequence = 0;
@@ -108,7 +108,7 @@ public class Memory_GMShapes : MonoBehaviour
                 
                 Debug.Log("WRONG!");
 
-                elapsedTime = (Time.time - startTime)/activeSequence.Count;
+                elapsedTime = (1 * Time.time - startTime)/activeSequence.Count;
                 Debug.Log(elapsedTime);
                 timeText.text = "Response Time: " + elapsedTime;
                 gameActive = false;
@@ -129,7 +129,7 @@ public class Memory_GMShapes : MonoBehaviour
         activeSequence.Add(shapeselect);
         if (activeSequence.Count > 5)
         {
-            elapsedTime = (Time.time - startTime)/5;
+            elapsedTime = (1 * Time.time - startTime)/5;
             Debug.Log(elapsedTime);
             timeText.text = "Response Time: " + elapsedTime;
             Debug.Log("Game limit");

@@ -70,9 +70,9 @@ public class LightsOut_GameManager : MonoBehaviour
 
         if (btns.Count == 0)
         {
-            elapsedtime = Time.deltaTime - starttime;
+            elapsedtime = 1 * Time.deltaTime - starttime;
             SceneManager.LoadScene("LightsOut_Victory_lightsout");
-            elapsedtime = Time.time - starttime;
+            elapsedtime = (1 * Time.time) - starttime;
             score++;
             if(elapsedtime < 10)
             {

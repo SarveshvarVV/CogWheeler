@@ -16,6 +16,10 @@ public class Eqs_addsub_endscene : MonoBehaviour
     public float avgTime;
 
     // Start is called before the first frame update
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
     void Start()
     {
         last_scene = PlayerPrefs.GetString("last_scene");

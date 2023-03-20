@@ -49,4 +49,9 @@ public class Balloons_tryend : MonoBehaviour
         }
     }
 
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
+
 }

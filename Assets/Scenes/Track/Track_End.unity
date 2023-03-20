@@ -1307,9 +1307,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1827243933}
-        m_TargetAssemblyTypeName: MenuGo, Assembly-CSharp
-        m_MethodName: Menugo
+      - m_Target: {fileID: 267880440}
+        m_TargetAssemblyTypeName: Track_EndScreenController, Assembly-CSharp
+        m_MethodName: GS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

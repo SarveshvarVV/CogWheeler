@@ -40,7 +40,7 @@ public class Memory_GMColours : MonoBehaviour
 
         if (shouldBeLit)
         {
-            stayLitCounter -= Time.deltaTime;
+            stayLitCounter -= 1*Time.deltaTime;
 
             if (stayLitCounter < 0)
             {
@@ -54,7 +54,7 @@ public class Memory_GMColours : MonoBehaviour
         }
         if (shouldBeDark)
         {
-            waitBetweenCounter -= Time.deltaTime;
+            waitBetweenCounter -= 1*Time.deltaTime;
             if (positionInSequence >= activeSequence.Count)
             {
                 shouldBeDark = false;
@@ -75,7 +75,7 @@ public class Memory_GMColours : MonoBehaviour
 
     public void StartGame()
     {
-        startTime = Time.time;
+        startTime = 1*Time.time;
         activeSequence.Clear();
         positionInSequence = 0;
         inputInSequence = 0;
@@ -108,7 +108,7 @@ public class Memory_GMColours : MonoBehaviour
                 
                 Debug.Log("WRONG!");
 
-                elapsedTime = (Time.time - startTime)/activeSequence.Count;
+                elapsedTime = (1 * Time.time - startTime)/activeSequence.Count;
                 Debug.Log(elapsedTime);
                 timeText.text = "Response Time: " + elapsedTime;
                 gameActive = false;

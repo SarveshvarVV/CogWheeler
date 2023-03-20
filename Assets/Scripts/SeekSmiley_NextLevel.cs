@@ -22,7 +22,10 @@ public class SeekSmiley_NextLevel : MonoBehaviour
 
     string minutes, seconds, milliseconds, avgmin, avgsec, avgmsec;
     public int score;
-
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
     private void Awake()
     {
         score = SeekSmiley_MainLevel.score;

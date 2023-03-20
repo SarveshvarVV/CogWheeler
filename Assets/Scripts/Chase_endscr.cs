@@ -12,6 +12,10 @@ public class Chase_endscr : MonoBehaviour
         timer();
     }
 
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
     //for back button
     public void back()
     {

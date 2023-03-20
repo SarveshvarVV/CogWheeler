@@ -1392,8 +1392,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1893408583}
-        m_TargetAssemblyTypeName: MenuGo, Assembly-CSharp
-        m_MethodName: PoDa
+        m_TargetAssemblyTypeName: Memory_MenuGo, Assembly-CSharp
+        m_MethodName: GS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

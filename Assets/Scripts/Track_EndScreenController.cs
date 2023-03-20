@@ -22,4 +22,8 @@ public class Track_EndScreenController : MonoBehaviour
     {
         
     }
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
 }

@@ -993,6 +993,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1095556358}
+        m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
+        m_MethodName: Lights_out
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &247909281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1130,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1095556358}
         m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
         m_MethodName: baby_gurl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1095556358}
+        m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
+        m_MethodName: Track
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1358,6 +1382,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1095556358}
+        m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
+        m_MethodName: SeekAlpha
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &367662319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,6 +1595,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1095556358}
         m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
         m_MethodName: baby_gurl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1095556358}
+        m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
+        m_MethodName: Balloons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2639,6 +2687,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1095556358}
+        m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
+        m_MethodName: Memory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &617981587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3483,6 +3543,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1095556358}
         m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
         m_MethodName: baby_gurl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1095556358}
+        m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
+        m_MethodName: Smiley
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4437,6 +4509,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1095556358}
+        m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
+        m_MethodName: Chase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &1041656508 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5582969862241963803, guid: a1aca3217bcdf734481624c76a554748, type: 3}
@@ -4873,6 +4957,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2013227191}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1095556357
 GameObject:
@@ -5593,7 +5689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.96620667, b: 0.96620667, a: 0.9647059}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6478,6 +6574,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1095556358}
+        m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
+        m_MethodName: Eqn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1387468148
 GameObject:
   m_ObjectHideFlags: 0
@@ -6801,7 +6909,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1501708975
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6845,7 +6953,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 51f3d2a66a4220a44833a059dc11d759, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7581,6 +7689,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1095556358}
         m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
         m_MethodName: baby_gurl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1095556358}
+        m_TargetAssemblyTypeName: UI_Menu_Controller, Assembly-CSharp
+        m_MethodName: PR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

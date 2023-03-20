@@ -77,7 +77,7 @@ public class Chase_EzManager : MonoBehaviour
     {
         if (currentTimetoSpawn > 0)
         {
-            currentTimetoSpawn -= Time.deltaTime;
+            currentTimetoSpawn -= 1*Time.deltaTime;
         }
         else
         {
@@ -92,7 +92,7 @@ public class Chase_EzManager : MonoBehaviour
         }
         else
         {
-            timer_obj += Time.deltaTime;
+            timer_obj += 1 * Time.deltaTime;
             setTimerObj1 = false;
         }
         if (btns_2.Count == 0)
@@ -135,6 +135,10 @@ public class Chase_EzManager : MonoBehaviour
             btns_2.Add(selected);
             //SceneManager.LoadScene("WrongLevel");
         }
-
+        
+    }
+    public void chasemenu()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Chase_Menu");
     }
 }

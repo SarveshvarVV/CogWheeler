@@ -1289,7 +1289,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1129071831}
         m_TargetAssemblyTypeName: Eqs_endscene, Assembly-CSharp
-        m_MethodName: menu_clicked
+        m_MethodName: GS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

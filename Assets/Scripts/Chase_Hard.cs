@@ -30,6 +30,10 @@ public class Chase_Hard : MonoBehaviour
     private int counting;
     public Color alpha0;
     // Start is called before the first frame update
+    public void chasemenu()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Chase_Menu");
+    }
     void Start()
     {
         alpha0 = Color.white;
@@ -98,7 +102,7 @@ public class Chase_Hard : MonoBehaviour
     {
         if (currentTimetoSpawn > 0)
         {
-            currentTimetoSpawn -= Time.deltaTime;
+            currentTimetoSpawn -= 1*Time.deltaTime;
         }
         else
         {
@@ -118,7 +122,7 @@ public class Chase_Hard : MonoBehaviour
         }
         else
         {
-            timer_obj += Time.deltaTime;
+            timer_obj += 1 * Time.deltaTime;
             setTimerObj2 = false;
         }
         if (btns_2.Count == 0)

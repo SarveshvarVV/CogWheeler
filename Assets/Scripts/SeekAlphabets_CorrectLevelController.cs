@@ -16,7 +16,11 @@ public class SeekAlphabets_CorrectLevelController : MonoBehaviour
     private List<float> ETList = SeekAlphabets_GameManager.ETList;
     private float avtTime;
     public Button nextLevelbtn;
-
+    public Button menu;
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
     private void Awake()
     {
         PlayerPrefs.SetInt("Score", score);
@@ -38,6 +42,7 @@ public class SeekAlphabets_CorrectLevelController : MonoBehaviour
         {
             
             nextLevelbtn.gameObject.SetActive(false);
+            menu.gameObject.SetActive(true);
             for(int i = 0; i < ETList.Count; i++)
             {
                 avtTime += ETList[i];
