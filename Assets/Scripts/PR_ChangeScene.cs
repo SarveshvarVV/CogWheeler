@@ -1,10 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PR_ChangeScene : MonoBehaviour
 {
-  public void GoToObjectsEZ()
+    public AudioSource GameAudio;
+    public static GameObject PRGameBGM;
+
+    private void Start()
+    {
+        PRGameBGM = GameAudio.gameObject;
+        DontDestroyOnLoad(PRGameBGM);
+    }
+
+    public void GoToObjectsEZ()
    {
        UnityEngine.SceneManagement.SceneManager.LoadScene("PR_Objects");
    }

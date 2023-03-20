@@ -7,6 +7,7 @@ public class Memory_BCShapes : MonoBehaviour
     private SpriteRenderer theSprite;
     private Memory_GMShapes theGm;
 
+    public AudioSource btnClick;
 
     public int thisButtonNumber;
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class Memory_BCShapes : MonoBehaviour
 
     void OnMouseDown()
     {
+        btnClick.Play();
         theSprite.color = new Color(1, 0, 0, 1.5f);
     }
     private void OnMouseUp()

@@ -23,6 +23,8 @@ public class PR_GameControllerHard : MonoBehaviour
     private float timer1;
     public static float timer_ez;
 
+    public AudioSource BtnClickSound;
+    public static GameObject BtnSoundGameObj;
 
     private int[] Randomiser(int[] locations)
     {
@@ -41,6 +43,8 @@ public class PR_GameControllerHard : MonoBehaviour
 
     private void Start()
     {
+        BtnSoundGameObj = BtnClickSound.gameObject;
+        DontDestroyOnLoad(BtnSoundGameObj);
         for (int b = 0; b < 8; b++)
         {
             Initialise(b);

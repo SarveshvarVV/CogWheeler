@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using System.Linq;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Audio;
 
 public class PR_GameController : MonoBehaviour
 {
@@ -23,7 +24,8 @@ public class PR_GameController : MonoBehaviour
     private float timer1;
     public static float timer_ez;
 
-    
+    public AudioSource BtnClickSound;
+    public static GameObject BtnSoundGameObj;
 
     private int[] Randomiser(int[] locations)
     {
@@ -42,6 +44,8 @@ public class PR_GameController : MonoBehaviour
 
     private void Start()
     {
+        BtnSoundGameObj = BtnClickSound.gameObject;
+        DontDestroyOnLoad(BtnSoundGameObj);
         for (int b = 0; b < 6; b++)
         {
             Initialise(b); 

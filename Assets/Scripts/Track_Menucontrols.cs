@@ -2,11 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class Track_Menucontrols : MonoBehaviour
 {
     public static bool ez;
+    public AudioSource TrackBGMAudio;
+    public static GameObject TrackAudioBGM;
     // Start is called before the first frame update
+    private void Start()
+    {
+        TrackAudioBGM = TrackBGMAudio.gameObject;
+        DontDestroyOnLoad(TrackAudioBGM);
+    }
     public void GS()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
