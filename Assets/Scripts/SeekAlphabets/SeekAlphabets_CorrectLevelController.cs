@@ -17,6 +17,8 @@ public class SeekAlphabets_CorrectLevelController : MonoBehaviour
     private float avtTime;
     public Button nextLevelbtn;
     public Button menu;
+    public GameObject SeekAlphabetsBgm;
+
     public void GS()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
@@ -36,6 +38,8 @@ public class SeekAlphabets_CorrectLevelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SeekAlphabetsBgm = SeekAlphabets_MenuPlayBtn.SeekAlphabetsBgmObj;
+        SeekAlphabetsBgm.GetComponent<AudioSource>().Pause();
         timeTaken.SetText("Time Taken: " + minutes + ":" + seconds + ":" + milliseconds);
         scoreText.text = "Score: " + score;
         if(SeekAlphabets_GameManager.levelCount == 10)
@@ -65,7 +69,7 @@ public class SeekAlphabets_CorrectLevelController : MonoBehaviour
 
     public void NextBtn_clicked()
     {
-
+        SeekAlphabetsBgm.GetComponent<AudioSource>().Play();
         string scene_name = PlayerPrefs.GetString("LastScene");
         SceneManager.LoadScene(scene_name);
 

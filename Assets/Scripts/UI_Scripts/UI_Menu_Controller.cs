@@ -9,13 +9,28 @@ public class UI_Menu_Controller : MonoBehaviour
 {
 
     public AudioSource BtnSound;
-    private GameObject BallonAudioSource;
+    private GameObject ChaseAudioSource, MemoryMatchAudioSource, BallonAudioSource, PatternRecogAudioSource, TrackAudioSource, SeekAlphabetsAudioSource, SeekSmileyAudioSource, LightsOutAudioSource;
+
 
     // Start is called before the first frame update
     void Start()
     {
         BallonAudioSource = Balloons_Menu_Script.Ballons_game_audio;
+        ChaseAudioSource = Chase_Menu_Script.Chase_game_audio;
+        MemoryMatchAudioSource = PR_ChangeScene.PRGameBGM;
+        PatternRecogAudioSource = Memory_SceneManager.Chase_Game_audio;
+        TrackAudioSource = Track_Menucontrols.TrackAudioBGM;
+        SeekAlphabetsAudioSource = SeekAlphabets_MenuPlayBtn.SeekAlphabetsBgmObj;
+        SeekSmileyAudioSource = SeekSmiley_PlayButton.SeekSmileyBgmObj;
+        LightsOutAudioSource = LightsOut_menuController.LightsOutBgmObj;
         Destroy(BallonAudioSource);
+        Destroy(ChaseAudioSource);
+        Destroy(MemoryMatchAudioSource);
+        Destroy(PatternRecogAudioSource);
+        Destroy(TrackAudioSource);
+        Destroy(SeekAlphabetsAudioSource);
+        Destroy(SeekSmileyAudioSource);
+        Destroy(LightsOutAudioSource);
     }
 
     // Update is called once per frame

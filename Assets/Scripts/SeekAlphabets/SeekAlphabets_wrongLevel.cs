@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SeekAlphabets_wrongLevel : MonoBehaviour
 {
+    public GameObject SeekAlphabetsBgm;
     // Start is called before the first frame update
     void Start()
     {
-        
+        SeekAlphabetsBgm = SeekAlphabets_MenuPlayBtn.SeekAlphabetsBgmObj;
+        SeekAlphabetsBgm.GetComponent<AudioSource>().Pause();
     }
 
     // Update is called once per frame
@@ -19,7 +21,7 @@ public class SeekAlphabets_wrongLevel : MonoBehaviour
 
     public void retryBtn_clicked()
     {
-
+        SeekAlphabetsBgm.GetComponent<AudioSource>().Play();
         string scene_name = PlayerPrefs.GetString("LastScene");
         SceneManager.LoadScene(scene_name);
     }

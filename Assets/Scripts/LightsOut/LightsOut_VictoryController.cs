@@ -11,8 +11,11 @@ public class LightsOut_VictoryController : MonoBehaviour
     private string minutes, seconds, milliseconds;
     public TextMeshProUGUI timeTaken;
     public int score;
+    public GameObject LightsOutBgm;
     public void GS()
     {
+        
+        Destroy( LightsOutBgm );
         UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
     }
     private void Awake()
@@ -27,12 +30,14 @@ public class LightsOut_VictoryController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        LightsOutBgm = LightsOut_menuController.LightsOutBgmObj;
         score = LightsOut_GameManager.score;
         timeTaken.SetText("Time Taken: " + minutes + ":" + seconds + ":" + milliseconds);
         //scoreText.text = "Score: " + score;
     }
     public void backtoMenu()
     {
+        Destroy(LightsOutBgm);
         SceneManager.LoadScene("LightsOut_Menu");
     }
 

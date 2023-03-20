@@ -22,6 +22,7 @@ public class SeekSmiley_NextLevel : MonoBehaviour
 
     string minutes, seconds, milliseconds, avgmin, avgsec, avgmsec;
     public int score;
+    public GameObject SeekSmileyBgm;
     public void GS()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
@@ -48,6 +49,8 @@ public class SeekSmiley_NextLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SeekSmileyBgm = SeekSmiley_PlayButton.SeekSmileyBgmObj;
+        SeekSmileyBgm.GetComponent<AudioSource>().Pause();
         timeTaken.SetText("Time Taken: " + minutes + ":" + seconds + ":" + milliseconds);
         if (SeekSmiley_NextButton.staticLevelList.Count == 0)
         {
@@ -77,8 +80,10 @@ public class SeekSmiley_NextLevel : MonoBehaviour
 
     public void nextBtn_Clicked()
     {
+
         if (SeekSmiley_NextButton.staticLevelList.Count != 0)
         {
+            SeekSmileyBgm.GetComponent<AudioSource>().Play();
             SceneManager.LoadScene(nextLevel);
         }
     }
