@@ -9,11 +9,13 @@ public class UI_Menu_Controller : MonoBehaviour
 {
 
     public AudioSource BtnSound;
+    private GameObject BallonAudioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        BallonAudioSource = Balloons_Menu_Script.Ballons_game_audio;
+        Destroy(BallonAudioSource);
     }
 
     // Update is called once per frame
