@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Eqs_addsub_scenemanager : MonoBehaviour
 {
+    public AudioSource EQBgm;
+    public static GameObject EQBgmObj;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        EQBgmObj = EQBgm.gameObject;
+        DontDestroyOnLoad(EQBgmObj);
     }
 
     // Update is called once per frame
@@ -17,6 +22,7 @@ public class Eqs_addsub_scenemanager : MonoBehaviour
     }
     public void GS()
     {
+        Destroy(EQBgmObj);
         UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
     }
     public void add1()

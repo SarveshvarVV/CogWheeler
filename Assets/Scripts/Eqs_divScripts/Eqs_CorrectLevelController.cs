@@ -29,10 +29,15 @@ public class Eqs_CorrectLevelController : MonoBehaviour
 
     private int levelCount;
 
+    private GameObject BgmObj;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Pause();
+
         levelCount = Eqs_lvl2_GameManager.levelCount;
         elapsedTime = Eqs_lvl2_GameManager.elapsedTime;
 
@@ -62,6 +67,8 @@ public class Eqs_CorrectLevelController : MonoBehaviour
 
     public void Clicked()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Play();
         if (levelCount == 10)
         {
             SceneManager.LoadScene("Eqs_endscene");

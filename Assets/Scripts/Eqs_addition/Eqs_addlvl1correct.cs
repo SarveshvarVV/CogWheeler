@@ -25,9 +25,14 @@ public class Eqs_addlvl1correct : MonoBehaviour
 
     private int levelCount;
 
+    private GameObject BgmObj;
+
     // Start is called before the first frame update
     void Start()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Pause();
+
         levelCount = Eqs_addlvl1manager.levelCount;
         elapsedTime = Eqs_addlvl1manager.elapsedTime;
 
@@ -52,6 +57,8 @@ public class Eqs_addlvl1correct : MonoBehaviour
 
     public void Clicked()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Play();
         if (levelCount == 10)
         {
             SceneManager.LoadScene("Eqs_endscene_add_sub");
@@ -63,6 +70,8 @@ public class Eqs_addlvl1correct : MonoBehaviour
     }
     public void menu_clicked()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("Eqs_Chase_Menu");
     }
     //public void rightcount()

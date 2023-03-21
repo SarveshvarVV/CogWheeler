@@ -32,6 +32,9 @@ public class Eqs_addlvl1manager : MonoBehaviour
 
     public static int levelCount;
 
+    public GameObject BtnClickSound;
+
+
     private void Awake()
     {
         int random_1 = UnityEngine.Random.Range(0, lvl1.Length);
@@ -64,6 +67,7 @@ public class Eqs_addlvl1manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(BtnClickSound);
         levelCount++;
         startTime = 1 * Time.time;
     }

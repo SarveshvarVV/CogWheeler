@@ -38,6 +38,9 @@ public class Eqs_mulmanager1 : MonoBehaviour
 
     public static int levelCount = 0;
 
+    public GameObject BtnClickSound;
+
+
     private void Awake()
     {
 
@@ -90,6 +93,8 @@ public class Eqs_mulmanager1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(BtnClickSound);
+
         levelCount++;
         startTime = 1 * Time.time;
     }

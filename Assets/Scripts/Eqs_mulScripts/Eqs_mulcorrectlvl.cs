@@ -24,11 +24,15 @@ public class Eqs_mulcorrectlvl : MonoBehaviour
     //public TextMeshProUGUI faildis;
 
     public int levelCount;
+    private GameObject BgmObj;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Pause();
+
         levelCount = Eqs_mulmanager1.levelCount;
         elapsedTime = Eqs_mulmanager1.elapsedTime;
 
@@ -56,6 +60,8 @@ public class Eqs_mulcorrectlvl : MonoBehaviour
 
     public void Clicked()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Play();
         if (levelCount == 10)
         {
             SceneManager.LoadScene("Eqs_endscene");
@@ -69,6 +75,8 @@ public class Eqs_mulcorrectlvl : MonoBehaviour
     }
     public void menu_clicked()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("Eqs_Chase_Menu");
     }
     //public void rightcount()

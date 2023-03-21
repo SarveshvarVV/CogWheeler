@@ -32,6 +32,8 @@ public class Eqs_sub2manager : MonoBehaviour
     private int c1, c2;
 
     public static int levelCount;
+    public GameObject BtnClickSound;
+
 
     private void Awake()
     {
@@ -93,6 +95,8 @@ public class Eqs_sub2manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(BtnClickSound);
+
         levelCount++;
         startTime = 1*Time.time;
     }

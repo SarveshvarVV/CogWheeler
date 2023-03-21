@@ -11,8 +11,18 @@ public class Eqs_Wrng : MonoBehaviour
     private int levelCount_div1 = Eqs_lvl1_GameManager.levelCount;
     private int levelCount_div2 = Eqs_lvl2_GameManager.levelCount;
 
+    private GameObject BgmObj;
+
+    private void Start()
+    {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Pause();
+    }
+
     public void div1()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("Eqs_div1");
         if (levelCount_div1 == 10)
         {
@@ -21,6 +31,8 @@ public class Eqs_Wrng : MonoBehaviour
     }
     public void div2()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("Eqs_div2");
         if (levelCount_div2 == 10)
         {
@@ -29,6 +41,8 @@ public class Eqs_Wrng : MonoBehaviour
     }
     public void mul1()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("Eqs_mullev1");
         if (levelCount_mul == 10)
         {
@@ -37,6 +51,8 @@ public class Eqs_Wrng : MonoBehaviour
     }
     public void mul2()
     {
+        BgmObj = Eqs_addsub_scenemanager.EQBgmObj;
+        BgmObj.GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("Eqs_mullev2");
         if (levelCount_mul2 == 10)
         {
