@@ -874,6 +874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeTaken: {fileID: 1998097085}
   score: 0
+  LightsOutBgm: {fileID: 0}
 --- !u!1 &1611696795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,7 +1011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1657343175
 RectTransform:
   m_ObjectHideFlags: 0
