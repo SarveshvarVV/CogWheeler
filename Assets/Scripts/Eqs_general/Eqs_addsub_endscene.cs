@@ -33,7 +33,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
                 avgTime += timeList[i];
             }
             avgTime /= timeList.Count;
-            avg.SetText("Average: " + avgTime.ToString());
+            avg.SetText(avgTime.ToString());
             for (int j = 0; j < 10; j++)
             {
                 timeTaken[j].SetText(timeList[j].ToString());
@@ -49,7 +49,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
                 avgTime += timeList[i];
             }
             avgTime /= timeList.Count;
-            avg.SetText("Average: " + avgTime.ToString());
+            avg.SetText(avgTime.ToString());
             for (int j = 0; j < 10; j++)
             {
                 timeTaken[j].SetText(timeList[j].ToString());
@@ -65,7 +65,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
                 avgTime += timeList[i];
             }
             avgTime /= timeList.Count;
-            avg.SetText("Average: " + avgTime.ToString());
+            avg.SetText(avgTime.ToString());
             for (int j = 0; j < 10; j++)
             {
                 timeTaken[j].SetText(timeList[j].ToString());
@@ -81,7 +81,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
                 avgTime += timeList[i];
             }
             avgTime /= timeList.Count;
-            avg.SetText("Average: " + avgTime.ToString());
+            avg.SetText(avgTime.ToString());
             for (int j = 0; j < 10; j++)
             {
                 timeTaken[j].SetText(timeList[j].ToString());
@@ -97,7 +97,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
                 avgTime += timeList[i];
             }
             avgTime /= timeList.Count;
-            avg.SetText("Average: " + avgTime.ToString());
+            avg.SetText(avgTime.ToString());
             for (int j = 0; j < 10; j++)
             {
                 timeTaken[j].SetText(timeList[j].ToString());
@@ -113,7 +113,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
                 avgTime += timeList[i];
             }
             avgTime /= timeList.Count;
-            avg.SetText("Average: " + avgTime.ToString());
+            avg.SetText(avgTime.ToString());
             for (int j = 0; j < 10; j++)
             {
                 timeTaken[j].SetText(timeList[j].ToString());
