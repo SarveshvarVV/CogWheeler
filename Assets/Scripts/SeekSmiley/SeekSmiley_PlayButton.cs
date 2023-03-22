@@ -23,7 +23,10 @@ public class SeekSmiley_PlayButton : MonoBehaviour
         SeekSmileyBgmObj = SeekSmiley.gameObject;
         DontDestroyOnLoad(SeekSmileyBgmObj);
     }
-
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
     // Update is called once per frame
     void Update()
     {

@@ -9,6 +9,7 @@ public class LightsOut_timerController : MonoBehaviour
 {
 
     public Slider slider;
+    public AudioSource btnSound;
     public TextMeshProUGUI timer_text;
     public static float timer;
 
@@ -16,6 +17,14 @@ public class LightsOut_timerController : MonoBehaviour
     void Start()
     {
         
+    }
+    public void BtnClickSound()
+    {
+        btnSound.Play();
+    }
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
     }
 
     // Update is called once per frame

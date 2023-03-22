@@ -18,6 +18,10 @@ public class SeekAlphabets_MenuPlayBtn : MonoBehaviour
     }
 
     // Update is called once per frame
+    public void GS()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_MainMenu");
+    }
     void Update()
     {
         

@@ -61,7 +61,7 @@ public class UI_Menu_Controller : MonoBehaviour
     }
     public void Lights_out()
     {
-        SceneManager.LoadScene("LightsOut_Menu");
+        SceneManager.LoadScene("LightsOut_TimerScreen");
     }
     public void Memory()
     {
