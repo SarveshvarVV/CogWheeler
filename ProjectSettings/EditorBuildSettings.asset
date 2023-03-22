@@ -243,9 +243,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Lights_out/LightsOut_Game.unity
     guid: 42fdb133a9c719e49b65f205e5e4d838
   - enabled: 1
-    path: Assets/Scenes/Lights_out/LightsOut_Menu.unity
-    guid: bd2f7d0b9b745e94986a71c32e99376d
-  - enabled: 1
     path: Assets/Scenes/Lights_out/LightsOut_TimerScreen.unity
     guid: 07bacc6a6ce6fc84788f11059e7298d8
   - enabled: 1
