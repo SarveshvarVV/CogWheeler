@@ -654,7 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seekingSmileyLevel: Smiley_seekingSmiley
   SeekSmiley: {fileID: 569667255}
-  SeekSmileyBgmObj: {fileID: 0}
+  BtnClick: {fileID: 368944356}
 --- !u!1 &569667254
 GameObject:
   m_ObjectHideFlags: 0

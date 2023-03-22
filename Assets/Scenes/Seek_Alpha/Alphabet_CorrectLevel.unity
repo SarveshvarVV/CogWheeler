@@ -1274,7 +1274,8 @@ MonoBehaviour:
   scoreText: {fileID: 269295767}
   avgTimeText: {fileID: 799727217}
   nextLevelbtn: {fileID: 15882166}
-  menu: {fileID: 0}
+  menu: {fileID: 1861033857}
+  SeekAlphabetsBgm: {fileID: 0}
 --- !u!4 &1288112647
 Transform:
   m_ObjectHideFlags: 0

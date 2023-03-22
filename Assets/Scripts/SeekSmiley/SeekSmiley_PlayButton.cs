@@ -12,9 +12,14 @@ public class SeekSmiley_PlayButton : MonoBehaviour
     [SerializeField] private string seekingSmileyLevel = "Smiley_seekingSmiley";
     public AudioSource SeekSmiley;
     public static GameObject SeekSmileyBgmObj;
+    public AudioSource BtnClick;
+    public static GameObject BtnClickObj;
+
     // Start is called before the first frame update
     void Start()
     {
+        BtnClickObj = BtnClick.gameObject;
+        DontDestroyOnLoad(BtnClickObj);
         SeekSmileyBgmObj = SeekSmiley.gameObject;
         DontDestroyOnLoad(SeekSmileyBgmObj);
     }

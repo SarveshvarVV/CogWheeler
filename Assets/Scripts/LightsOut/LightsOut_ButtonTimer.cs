@@ -11,8 +11,12 @@ public class LightsOut_ButtonTimer : MonoBehaviour
     Button btn;
     public Sprite glow, dark;
 
+    public AudioSource BulbOn;
+    public AudioSource BulbOff;
+
     void Start()
     {
+
         timeLimit = LightsOut_timerController.timer;
         Button b = gameObject.GetComponent<Button>();
         btn = b;
@@ -45,6 +49,7 @@ public class LightsOut_ButtonTimer : MonoBehaviour
     // Call this function when the button is clicked to start the timer
     public void StartTimer()
     {
+        BulbOff.Play();
         btn = gameObject.GetComponent<Button>();
         btn.interactable = false;
         btn.image.sprite = dark;

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class LightsOut_GameManager : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class LightsOut_GameManager : MonoBehaviour
     public static float elapsedtime;
     private float starttime;
     public static int score;
+
+    public AudioSource BulbOn;
+    public AudioSource BulbOff;
 
     // Start is called before the first frame update
     void Start()
@@ -45,8 +49,6 @@ public class LightsOut_GameManager : MonoBehaviour
     void Update()
     {
 
-        // Lights not adding back into the list and the game ending before all the lights turn off
-
        foreach(Button b in btns2)
         {
             if(b.GetComponent<LightsOut_ButtonTimer>().isTimerActive() == false)
@@ -54,6 +56,7 @@ public class LightsOut_GameManager : MonoBehaviour
                 
                 if (!btns.Contains(b))
                 {
+                    BulbOn.Play();
                     Debug.Log("Added Btn" + b.name);
                     btns.Add(b);
                 }

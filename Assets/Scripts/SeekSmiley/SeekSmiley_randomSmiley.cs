@@ -11,7 +11,8 @@ public class SeekSmiley_randomSmiley : MonoBehaviour
     public Sprite[] images;
     public Image smiley;
     public static string correctSmiley;
-
+    public AudioSource BtnClick;
+    public static GameObject BtnClickObj;
 
     private void Awake()
     {
@@ -23,7 +24,8 @@ public class SeekSmiley_randomSmiley : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        BtnClickObj = BtnClick.gameObject;
+        DontDestroyOnLoad(BtnClickObj);
     }
 
     // Update is called once per frame
