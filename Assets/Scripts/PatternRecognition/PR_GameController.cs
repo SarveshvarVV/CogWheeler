@@ -18,6 +18,7 @@ public class PR_GameController : MonoBehaviour
     public const float Yspace = -2.5f; //vertical space between the tiles
 
     [SerializeField] private PR_MainImageScript startObject;
+    
     public Sprite[] all_elements;
 
     [SerializeField] private Sprite[] images;
@@ -193,6 +194,7 @@ public class PR_GameController : MonoBehaviour
         {
             Panel.SetActive(true); //end game panel is set active
             Back.SetActive(false);
+            
             timer1 = timer_ez - 5f;
             timeText.text = "Time: " + timer1;  //timmer value is set to the text
             timer_ez = 0; //timer reset
