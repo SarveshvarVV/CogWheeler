@@ -545,7 +545,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -631,6 +631,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 596740146}
     m_Modifications:
+    - target: {fileID: 1335409323407570994, guid: 16a61aff2cffa3e48929651c4ffc3225, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335409323407570994, guid: 16a61aff2cffa3e48929651c4ffc3225, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1335409323407571004, guid: 16a61aff2cffa3e48929651c4ffc3225, type: 3}
       propertyPath: m_Name
       value: Track_Obj1

@@ -26,6 +26,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
 
         if (last_scene == "Eqs_addlvl1")
         {
+            Eqs_addlvl1manager.levelCount = 0;
             timeList = Eqs_addlvl1manager.timeList;
             resultList = Eqs_addlvl1manager.resultList;
             for (int i = 0; i < 10; i++)
@@ -42,6 +43,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
         }
         else if (last_scene == "Eqs_addlvl2")
         {
+            Eqs_addlvl2manager.levelCount = 0;
             timeList = Eqs_addlvl2manager.timeList;
             resultList = Eqs_addlvl2manager.resultList;
             for (int i = 0; i < 10; i++)
@@ -58,6 +60,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
         }
         else if (last_scene == "Eqs_addlvl3")
         {
+            Eqs_addlvl3manager.levelCount = 0;
             timeList = Eqs_addlvl3manager.timeList;
             resultList = Eqs_addlvl3manager.resultList;
             for (int i = 0; i < 10; i++)
@@ -74,6 +77,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
         }
         else if (last_scene == "Eqs_sublvl1")
         {
+            Eqs_sub1manager.levelCount = 0;
             timeList = Eqs_sub1manager.timeList;
             resultList = Eqs_sub1manager.resultList;
             for (int i = 0; i < 10; i++)
@@ -90,6 +94,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
         }
         else if (last_scene == "Eqs_sublvl2")
         {
+            Eqs_sub2manager.levelCount = 0;
             timeList = Eqs_sub2manager.timeList;
             resultList = Eqs_sub2manager.resultList;
             for (int i = 0; i < 10; i++)
@@ -106,6 +111,7 @@ public class Eqs_addsub_endscene : MonoBehaviour
         }
         else if (last_scene == "Eqs_sublvl3")
         {
+            Eqs_sub3manager.levelCount = 0;
             timeList = Eqs_sub3manager.timeList;
             resultList = Eqs_sub3manager.resultList;
             for (int i = 0; i < 10; i++)

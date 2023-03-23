@@ -96,13 +96,13 @@ public class Eqs_mulmanager1 : MonoBehaviour
         DontDestroyOnLoad(BtnClickSound);
 
         levelCount++;
+        Debug.Log(levelCount);
         startTime = 1 * Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
 
 

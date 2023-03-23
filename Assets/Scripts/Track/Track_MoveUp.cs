@@ -8,7 +8,7 @@ public class Track_MoveUp : MonoBehaviour
     public Sprite selobj;
     public Image image;
     public float speed;
-    public bool Moveup;
+    public bool Moveup=true;
     public float timer;
     private float ogtimer;
     public GameObject nextObj;

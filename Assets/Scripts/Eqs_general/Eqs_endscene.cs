@@ -26,6 +26,7 @@ public class Eqs_endscene : MonoBehaviour
         last_scene = PlayerPrefs.GetString("last_scene");
         if (last_scene == "Eqs_mullev1") 
         {
+            Eqs_mulmanager1.levelCount= 0;
             timeList = Eqs_mulmanager1.timeList;
             resultList = Eqs_mulmanager1.resultList;
             for (int i = 0; i < 10; i++)
@@ -43,6 +44,7 @@ public class Eqs_endscene : MonoBehaviour
 
         else if (last_scene == "Eqs_mullev2")
         {
+            Eqs_mulmanager2.levelCount = 0;
             timeList = Eqs_mulmanager2.timeList;
             resultList = Eqs_mulmanager2.resultList;
             for (int i = 0; i < 10; i++)
@@ -59,6 +61,7 @@ public class Eqs_endscene : MonoBehaviour
         }
         else if (last_scene == "Eqs_div1")
         {
+            Eqs_lvl1_GameManager.levelCount = 0;
             timeList = Eqs_lvl1_GameManager.timeList;
             resultList = Eqs_lvl1_GameManager.resultList;
             for (int i = 0; i < 10; i++)
@@ -77,6 +80,7 @@ public class Eqs_endscene : MonoBehaviour
         }
         else if (last_scene == "Eqs_div2")
         {
+            Eqs_lvl2_GameManager.levelCount = 0;
             timeList = Eqs_lvl2_GameManager.timeList;
             resultList = Eqs_lvl2_GameManager.resultList;
             for (int i = 0; i < 10; i++)
