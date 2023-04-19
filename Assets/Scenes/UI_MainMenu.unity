@@ -9435,8 +9435,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 475, y: -78.23999}
-  m_SizeDelta: {x: 950, y: -68.78}
+  m_AnchoredPosition: {x: 475, y: -76.83002}
+  m_SizeDelta: {x: 950, y: -65.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657546342
 MonoBehaviour:
@@ -9487,18 +9487,17 @@ MonoBehaviour:
     Arya Narone
 
 
-    UI
-    DESIGN
+    UI DESIGN
 
-    Shyam Ganesh K
+    Shyam
+    Ganesh K
 
     Vijaya Raghavan S
 
 
     SFX & SCORE
 
-    Akshat
-    Jain
+    Akshat Jain
 
 
 
@@ -10621,7 +10620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1781045235
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10683,7 +10682,6 @@ MonoBehaviour:
 
     Dr.Ganapathy Sankar.U
 
-    
 
     TEAM
     LEADS
@@ -10694,7 +10692,6 @@ MonoBehaviour:
 
     Stephy Keziah
 
-    
 
     HARDWARE
     INTEGRATION
