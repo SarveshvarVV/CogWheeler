@@ -5022,7 +5022,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2095974762}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -9435,8 +9435,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 475, y: -55}
-  m_SizeDelta: {x: 950, y: -110}
+  m_AnchoredPosition: {x: 475, y: -78.23999}
+  m_SizeDelta: {x: 950, y: -68.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657546342
 MonoBehaviour:
@@ -9471,33 +9471,36 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Asset Design
+  m_Text: 'GAME DEVELOPMENT
 
-    Harshvardhan Sharma
+    Adithyaa Hariharan
 
-    Samridhi Ranjan
+    Karthikeyan Pandiyan
+
+    Divyansh
+    Chauhan
+
+    Mithilesh Mohanty
+
+    Safa Mehreen
+
+    Arya Narone
 
 
+    UI
+    DESIGN
 
-    UI Design
-
-    Shyam
-    Ganesh K
+    Shyam Ganesh K
 
     Vijaya Raghavan S
 
 
+    SFX & SCORE
 
-    SFX & Score
-
-    Akshat Jain
-
+    Akshat
+    Jain
 
 
-    Hardware
-    Integration
-
-    Bhavy Bhatnagar
 
 '
 --- !u!222 &1657546343
@@ -10636,8 +10639,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -475, y: -30}
-  m_SizeDelta: {x: -950, y: -60}
+  m_AnchoredPosition: {x: -475, y: -51.929993}
+  m_SizeDelta: {x: -950, y: -16.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781045236
 MonoBehaviour:
@@ -10672,9 +10675,42 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Mentors\r\nDr A. Murugan\r\nDr.M. Lakshmi\r\n\r\nTeam Leads\r\nSarveshvar
-    VV\r\nAntony Sam Jaiton\r\n\r\nGame Development\r\nAdithyaa Hariharan\r\nKarthikeyan
-    Pandiyan\r\nDivyansh Chauhan\r\nMithilesh Mohanty\r\nSafa Mehreen\r\nArya Narone\r\n\r"
+  m_Text: 'MENTORS
+
+    Dr A. Murugan
+
+    Dr.M. Lakshmi
+
+    Dr.Ganapathy Sankar.U
+
+    
+
+    TEAM
+    LEADS
+
+    Sarveshvar VV
+
+    Antony Sam Jaiton
+
+    Stephy Keziah
+
+    
+
+    HARDWARE
+    INTEGRATION
+
+    Bhavy Bhatnagar
+
+
+    ASSET DESIGN
+
+    Harshvardhan Sharma
+
+    Samridhi
+    Ranjan
+
+
+'
 --- !u!222 &1781045237
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11645,7 +11681,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Credits:'
+  m_Text: 'CREDITS:'
 --- !u!222 &1971368463
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12502,10 +12538,10 @@ RectTransform:
   m_Children:
   - {fileID: 909943408}
   - {fileID: 1993272011}
+  - {fileID: 890659035}
   - {fileID: 716293710}
   - {fileID: 1802357978}
   - {fileID: 738425136}
-  - {fileID: 890659035}
   m_Father: {fileID: 1190638738}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
