@@ -10620,7 +10620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1781045235
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10676,11 +10676,11 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'MENTORS
 
-    Dr A. Murugan
+    Dr.U.Ganapathy Sankar
 
     Dr.M. Lakshmi
 
-    Dr.Ganapathy Sankar.U
+    Dr.A. Murugan
 
 
     TEAM
@@ -10690,7 +10690,7 @@ MonoBehaviour:
 
     Antony Sam Jaiton
 
-    Stephy Keziah
+    Stephy Keziah S
 
 
     HARDWARE

@@ -72,11 +72,11 @@ public class Track_MoveDiagonal : MonoBehaviour
     {
         timeflow += Time.deltaTime;
         if(Moved){
-            transform.Translate(-2.13f* Time.deltaTime * speed,1 * Time.deltaTime * speed ,0);
+            transform.Translate(-2.13f* Time.fixedDeltaTime * speed,1 * Time.fixedDeltaTime * speed ,0);
             // transform.localScale = new Vector2(1,1);
         }
         else{
-            transform.Translate(2.13f * Time.deltaTime * speed,-1 * Time.deltaTime * speed ,0);
+            transform.Translate(2.13f * Time.fixedDeltaTime * speed,-1 * Time.fixedDeltaTime * speed ,0);
             // transform.localScale = new Vector2(-1,1);
         }
     }

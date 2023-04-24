@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751ab402779ced54db6eb8cc8f79e6c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.25
   image: {fileID: 4439312739466992317}
   selobj: {fileID: 0}
   MoveRight: 0

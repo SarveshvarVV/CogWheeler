@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5393db3532085424389cefb0eb8bcf2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 0.5
   image: {fileID: 4920490250257266131}
   selobj: {fileID: 0}
   MoveRight: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   nextObj: {fileID: 4439312739466992319, guid: 1f9e1731bf832c449b620157e848d667, type: 3}
   xPos: -6.51
   yPos: -2.93
+  timeflow: 0
 --- !u!61 &4797386089826713429
 BoxCollider2D:
   m_ObjectHideFlags: 0

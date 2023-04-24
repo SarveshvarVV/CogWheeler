@@ -71,11 +71,11 @@ public class Track_Move1 : MonoBehaviour
     {
         timeflow += Time.deltaTime;
         if (MoveRight){
-            transform.Translate(1 * Time.deltaTime * speed , 0,0);
+            transform.Translate(1 * Time.fixedDeltaTime * speed , 0,0);
             // transform.localScale = new Vector2(1,1);
         }
         else{
-            transform.Translate(-1 * Time.deltaTime * speed , 0,0);
+            transform.Translate(-1 * Time.fixedDeltaTime * speed , 0,0);
             // transform.localScale = new Vector2(-1,1);
         }
     }

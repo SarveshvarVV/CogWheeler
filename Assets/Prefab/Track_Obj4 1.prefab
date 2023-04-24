@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcf99e8fdf22724f963e28afb3c4236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.2
   Moved: 1
   selobj: {fileID: 0}
   timer: 5
@@ -146,3 +146,4 @@ MonoBehaviour:
   image: {fileID: 5560361852769293061}
   xPos: 7.02
   yPos: 3.28
+  timeflow: 0

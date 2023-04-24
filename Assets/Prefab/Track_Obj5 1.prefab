@@ -91,11 +91,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f891aeb6cc4aa49b609bffb02067ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.2
   Moved: 1
   selobj: {fileID: 0}
   timer: 5
   image: {fileID: 5494319493424182630}
+  timeflow: 0
 --- !u!61 &5494319493424182628
 BoxCollider2D:
   m_ObjectHideFlags: 0

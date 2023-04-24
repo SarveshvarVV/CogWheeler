@@ -30,11 +30,13 @@ public class Chase_endscr : MonoBehaviour
         {
             score.text = "Time Taken: " + Chase_EzManager.timer_obj + " seconds";
             Chase_EzManager.setTimerObj1 = false;
+            Chase_EzManager.timer_obj= 0;
         }
         else if (Chase_Hard.setTimerObj2 == true)
         {
             score.text = "Time Taken: " + Chase_Hard.timer_obj + " seconds";
             Chase_Hard.setTimerObj2 = false;
+            Chase_Hard.timer_obj= 0;
         }
     }
 }

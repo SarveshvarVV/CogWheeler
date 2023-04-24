@@ -69,11 +69,11 @@ public class Track_MoveUp1 : MonoBehaviour
     {
         timeflow += Time.deltaTime;
         if(Moveup){
-            transform.Translate(0,1 * Time.deltaTime * speed ,0);
+            transform.Translate(0,1 * Time.fixedDeltaTime * speed ,0);
             // transform.localScale = new Vector2(1,1);
         }
         else{
-            transform.Translate(0,-1 * Time.deltaTime * speed ,0);
+            transform.Translate(0,-1 * Time.fixedDeltaTime * speed ,0);
             // transform.localScale = new Vector2(-1,1);
         }
     }
