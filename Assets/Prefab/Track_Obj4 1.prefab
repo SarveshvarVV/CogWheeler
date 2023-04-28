@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcf99e8fdf22724f963e28afb3c4236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.2
+  speed: 2.25
   Moved: 1
   selobj: {fileID: 0}
   timer: 5

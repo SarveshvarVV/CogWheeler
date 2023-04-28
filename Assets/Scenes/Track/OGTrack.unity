@@ -779,7 +779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selobj: {fileID: 0}
   image: {fileID: 1335409324194226426}
-  speed: 0.25
+  speed: 2
   Moveup: 1
   timer: 3
   nextObj: {fileID: 1335409323407571004, guid: 16a61aff2cffa3e48929651c4ffc3225, type: 3}
