@@ -22,7 +22,7 @@ public class Chase_endscr : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("Chase_Menu");
     }
 
-    //displaying the time taken in the game
+    //displaying the time taken in the game.
     //called in the update function.
     public void timer()
     {
@@ -40,3 +40,4 @@ public class Chase_endscr : MonoBehaviour
         }
     }
 }
+
